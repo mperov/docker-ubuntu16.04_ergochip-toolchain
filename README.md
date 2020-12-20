@@ -11,7 +11,7 @@ This repository contains **Dockerfile** of [Ubuntu](http://www.ubuntu.com/) for 
 1. Install [Docker](https://www.docker.com/)
 2. Clone repo - `git clone https://github.com/mperov/docker-ubuntu16.04_ergochip-toolchain.git`
 3. `cd docker-ubuntu16.04_ergochip-toolchain/`
-4. Build Docker image - `docker build -t mperov/ergochip-toolchain .`
+4. Build Docker image - `docker build --build-arg HASH='1qUSJKHiH5JVJAW7r2VbtKM4ispbQRLk-' -t mperov/ergochip-toolchain .`
 5. Check built image - `docker images`
 
 ### Usage
