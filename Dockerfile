@@ -17,7 +17,8 @@ RUN \
   wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$CONFIRM&id=$HASH" -O /root/risc-v_toolchain_installer.sh && \ 
   rm -rf /tmp/cookies.txt && \
   chmod +x /root/risc-v_toolchain_installer.sh && \
-  /root/risc-v_toolchain_installer.sh
+  /root/risc-v_toolchain_installer.sh && \
+  /bin/bash -c "source /opt/wasserfall-riscv/enable"
 
 # environment variables
 ENV HOME /root
